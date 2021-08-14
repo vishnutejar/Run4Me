@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Run4Me">
-        <activity android:name=".activitys.NotificationsActivity"></activity>
+        <activity android:name=".activitys.HomeActivity"></activity>
+        <activity android:name=".activitys.RegistrationStatusActivity" />
+        <activity android:name=".activitys.RegisterationActivity" />
+        <activity android:name=".activitys.NotificationsActivity" />
         <activity android:name=".activitys.TermsAndConditionActivity" />
         <activity android:name=".activitys.ResetYourPasswordActivity" />
         <activity android:name=".activitys.ForgotPasswordActivity" />

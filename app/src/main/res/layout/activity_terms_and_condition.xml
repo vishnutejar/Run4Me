@@ -17,18 +17,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_Content"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:text="Terms &amp; Condition"
-        android:textColor="@color/green"
-        android:textSize="30dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Submit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_header" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_header">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_Content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you
+Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you
+Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you
+Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you
+Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you
+Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you
+Are you ready to buy a home theater audio system? Here
+are several tips to help you find the right audio system
+for you"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </ScrollView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_Submit"

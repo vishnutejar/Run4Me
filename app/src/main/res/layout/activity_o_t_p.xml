@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingRight="10dp"
-    android:background="@color/yellow"
+    android:background="@drawable/whiteyellowbg"
     tools:context=".activitys.PreLoginActivity">
 
     <ImageView

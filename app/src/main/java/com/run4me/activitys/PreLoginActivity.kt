@@ -14,18 +14,26 @@ import com.run4me.R
 class PreLoginActivity : AppCompatActivity() {
     lateinit var termsTv: TextView
     lateinit var signwithmobilenumber: AppCompatButton
+    lateinit var fb_signwithmobilenumber: AppCompatButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pre_login)
         termsTv = findViewById(R.id.txt_terms)
         signwithmobilenumber = findViewById(R.id.signwithmobilenumber)
+        fb_signwithmobilenumber = findViewById(R.id.fb_signwithmobilenumber)
         signwithmobilenumber.setOnClickListener { startActivity(Intent(this,LoginActivity::class.java)) }
+        fb_signwithmobilenumber.setOnClickListener { startActivity(Intent(this,RegisterationActivity::class.java)) }
         SpannableStringWithColor(
             termsTv,
             29,
             49,
             "By signing in,you accept our Terms and conditions"
         )
+
+        termsTv.setOnClickListener {
+            val gotoTermspage=Intent(this,TermsAndConditionActivity::class.java);
+            startActivity(gotoTermspage)
+        }
     }
 
   private  fun SpannableStringWithColor(view: TextView, start: Int, end: Int, s: String) {
